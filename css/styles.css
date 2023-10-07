@@ -64,7 +64,7 @@
 }
 
 #scroll-menu a {
-  color: #fff;
+  color: #DCDCDC!important;
   text-decoration: none;
 }
 
@@ -141,9 +141,14 @@
 .logo {
   flex: 0 0 auto;
   margin-right: 20px;
-  width: 250px;
+  width: 190px;
   transition: transform 0.5s; /* Efeito de transição suave */
 }
+
+.logo img {
+  object-fit: contain;
+}
+
 
 /* Quando o mouse passar por cima, pare a animação */
 .carousel-container:hover .carousel {
@@ -324,6 +329,7 @@ footer .redirect-label {
   font-weight: 500;
   line-height: normal;
   padding: 5px 35px;
+  text-decoration: none;
 }
 
 .button-contact:hover {
@@ -344,6 +350,7 @@ footer .redirect-label {
   font-weight: 400;
   line-height: normal;
   padding: 5px 35px;
+  text-decoration: none;
 }
 
 .button-what-we-do:hover {
@@ -364,6 +371,7 @@ footer .redirect-label {
   font-weight: 500;
   line-height: normal;
   padding: 5px 35px;
+  text-decoration: none;
 }
 
 .button-portfolio:hover {
@@ -384,6 +392,7 @@ footer .redirect-label {
   line-height: normal;
   padding: 10px 35px;
   width: 100%;
+  text-decoration: none;
 }
 
 .button-send:hover {
@@ -401,6 +410,7 @@ footer .redirect-label {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  text-decoration: none;
 }
 
 textarea {
@@ -439,11 +449,22 @@ input {
   line-height: normal;
 }
 
+.arrow-down-portfolio {
+  position: absolute;
+  text-align: center;
+  margin: 20px auto;
+  animation: bounce 4s infinite;
+  cursor: pointer;
+  /* bottom: -50px; */
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
 .arrow-down {
   position: absolute;
   text-align: center;
   margin: 20px auto;
-  animation: bounce 1s infinite;
+  animation: bounce 4s infinite;
   cursor: pointer;
   bottom: -50px;
   left: 50%;
@@ -453,12 +474,15 @@ input {
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.1, 1);
   }
   40% {
-    transform: translateY(-100px); 
+    transform: translateY(-30px); 
+    animation-timing-function: cubic-bezier(0.86, 0, 0.1, 1);
   }
   60% {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.1, 1);
   }
 }
 
@@ -484,4 +508,98 @@ input {
 .loading-overlay video {
   max-width: 100%;
   max-height: 100%;
+}
+
+.card-apenas-um-casal {
+  background-image: url('../img/apenas-um-casal.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+.card-hurocky {
+  background-image: url('../img/hurochy.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+.card-lower {
+  background-image: url('../img/lower.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+.card-altafini {
+  background-image: url('../img/altafini.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+.card-espadim {
+  background-image: url('../img/espadim.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+.card-sn4rfx {
+  background-image: url('../img/sn4rfx.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+.card-title  {
+  color: #DCDCDC!important;
+  font-size: 20.899px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-border-radius {
+  border-radius: 30px;
+}
+
+.title-portfolio {
+  color: #333;
+  font-size: 30.453px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112.9%;
+}
+
+.title-portfolio strong {
+  font-weight: bold;
+}
+
+#other-projects {
+  background: url('../img/bg-portfolio-page.png') 50% / cover no-repeat;
 }
