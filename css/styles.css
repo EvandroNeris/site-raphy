@@ -190,9 +190,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 52.558px;
+  border-radius: 40px;
   border: 1.5px solid #747474;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
+}
+
+#comments .comment:hover {
+  background: #232323;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.70);
 }
 
 #comments .comment h5 {
@@ -602,4 +607,52 @@ input {
 
 #other-projects {
   background: url('../img/bg-portfolio-page.png') 50% / cover no-repeat;
+}
+
+.expand {
+  text-align: center;
+  border-radius: 21.808px;
+  border: 1.615px solid #ABABAB;
+  background: transparent;
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.expand button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.content-expand {
+  min-height: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .arrow-down {
+    left: 44%;
+  }
+
+  .carousel {
+    display: flex;
+    animation: scroll 3s linear infinite;
+  }
+
+  #call-to-action video {
+    width: 100%;
+  }
+  
+  .hidden-nav {
+    display: block;
+  }
 }
