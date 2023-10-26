@@ -632,6 +632,11 @@ input {
 
 .content-expand {
   min-height: 40px;
+  padding: 20px;
+  padding-top: 0;
+  color: #4E4E4E;
+  font-size: 12px;
+  line-height: 171.4%;
 }
 
 .hidden {
