@@ -591,6 +591,12 @@ input {
 
 .card-border-radius {
   border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-border-radius:hover {
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.70);
 }
 
 .title-portfolio {
@@ -659,5 +665,17 @@ input {
   
   .hidden-nav {
     display: block;
+  }
+
+  .navbar-collapse {
+    margin-top: 10px;
+    background-color: rgba(15,15,15, 60);
+    .nav-item {
+      padding: 20px;
+    }
+
+    .nav-item:hover {
+      background-color: rgba(15,15,15, 80);
+    }
   }
 }

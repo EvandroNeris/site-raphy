@@ -25,3 +25,16 @@
 #next-button {
   cursor: pointer;
 }
+
+.distack {
+  font-weight: bold;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cart-title {
+  text-decoration: none;
+}
