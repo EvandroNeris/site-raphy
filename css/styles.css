@@ -654,6 +654,10 @@ input {
     left: 44%;
   }
 
+  .arrow-down-portfolio {
+    left: 40%;
+  }
+
   .carousel {
     display: flex;
     animation: scroll 3s linear infinite;
